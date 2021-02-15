@@ -1,0 +1,564 @@
+9am
+11-11:15	break	
+1-1:45		break
+4-4:15		break
+6pm		
+
+9488029292
+
+Jagadeeswaran Rangappan
+15-Feb-2000
+
+Front End technologies
+
+Visual Studio Code 
+	download vs code 
+
+HTML
+	Front end
+	website development
+	designing the websites
+	web development
+	
+
+write HTML code we need an editor
+	vs code		
+	Create a new file
+		give a name for the file (choose a location for the file)
+		store all the hands on files in a folder (day wise)
+		D:\Jag\MPhasis\HANDSON\185 Java JR\Feb15
+		one.html
+
+		type html:5 and press enter
+
+
+	what are the elements you see?
+		in html, elements are tags
+<body>		starting tag
+    
+</body>		end tag
+
+what is the root element for html file?
+
+HTML is the root element for html file. 
+All elements must be present inside the root element. 
+There can be only 1 root element in a file
+
+These rules are defined in SGML	(Standard Generalized Markup Language)
+
+1) root element
+2) only 1 root element
+3) all elements must be present inside the root element
+
+HTML program has 2 portions
+1) head
+2) body
+
+
+we visit a web page in the browser. There are certain code which is loaded in memory even before the page is displayed
+those code are written inside <HEAD> tag
+
+whatever we want to display, should be coded inside <BODY> tag
+
+Task:
+	create a html file name it as three.html
+	display the following message:
+		Today is our first day of training. Wish you all success..
+
+1) open visual studio code
+2) file-> new file
+	choose the location as your today's folder
+	file -> save as
+		go to the folder (tdys' folder)
+	name the file as three.html
+3) type
+		html:5
+	press enter
+4) type the following in body tag:
+		Today is our first day of training. Wish you all success..
+5) save the file
+6) open the file in browser
+	open a browser like chrome
+
+
+
+
+a tag can be
+	start tag and end tag		ex:	<body>	</body>
+	empty tag			ex:	<br/>			ex:	<hr/>	horizontal rule
+
+
+
+observe:
+	<p> is used to write paragaphs </p>
+	by default, paragraphs appear in separate lines.
+	this is because, a p element has a default style
+	p {
+	    display: block;				opposite to block is "inline"
+	    margin-block-start: 1em;
+	    margin-block-end: 1em;
+	    margin-inline-start: 0px;
+	    margin-inline-end: 0px;
+	}
+
+There are 2 types of display.
+	i)  block
+	ii) inline		(default)
+
+earlier i used <b> for bold but this was not block. this was inline
+
+id attribute 
+
+<element attribute="value">	
+	attribute is a part of element
+	the value of attribute must be in double quotes only. (even if it is a number)
+		
+
+ID must be unique
+class name can be duplicate also
+more than 1 class name can be applied to an element also
+	<input type="button" class="btn btn-success" />
+
+
+Task:
+	create a html file named as "fourth.html"
+	Display the following in browser:
+		This is heading 1
+		This is heading 2
+		This is heading 3
+	..... upto 6 headings
+
+	Note:
+		enclose each heading inside a tag <h1> for first heading
+		use <h1> upto <h6>
+
+
+Task:
+	fifth.html
+
+	Type a heading as follows:
+		Employees Details
+
+	manually, give style to this paragraph so that it will display like a <H1> heading in center alignment
+
+Task:
+	identify html elements which are "inline"
+	identify html elements which are "block"
+
+Inline Elements
+	<b>			bold
+	<i>			italic
+	<label>			label
+	<strong>		strong
+	<small>
+	<span>			span
+
+Block Elements
+	<div>			division
+	<table>
+	<li>			display:list-item
+	<h1> ... <h6>	
+	<form>
+
+
+
+
+.footer
+
+
+footer
+ENtities:
+	&nbsp;			space
+	&lt;			<
+	&gt;			>
+	
+
+11:00 to 11:15 BREAK
+=====================
+
+list some items
+	list item (LI)		<LI></LI>
+There are 
+	unordered list
+		bullets
+	ordered list
+		1, 2, 3, 4, 5
+		i, ii, iii, iv, v
+		a, b, c, d, e
+		
+
+<ul>
+	<li>India</li>
+	<li>Australia</li>
+</ul>
+
+<ol>
+	<li>India</li>
+	<li>Australia</li>	
+</ol>
+
+Task:
+	Identify various ways of displaying ordered list (<ol>)
+	i) specify the format 	
+		1, 2, 3, 4, 5
+		i, ii, iii, iv, v
+		a, b, c, d, e
+		
+	ii) to specify "starts with"
+		5, 6, 7, 8
+		e, f, g, h	(not from "a")
+		
+<ol>
+	<li type="1">India</li>
+</ol>
+
+<ol type="i" start="3" reversed>
+	<li>India</li>
+	<li>Australia</li>	
+</ol>
+checked
+selected
+reversed
+required
+
+Task:
+	Identify various ways of displaying unordered list (<ul>)
+
+
+types : square, disc (default), circle, none
+	ex:	
+<ul type = "square">
+        <li>Beetroot</li>
+        <li>Ginger</li>
+        <li>Potato</li>
+        <li>Radish</li>
+    </ul>
+    <ul type = "disc">
+        <li>Beetroot</li>
+        <li>Ginger</li>
+        <li>Potato</li>
+        <li>Radish</li>
+     </ul>
+
+
+HTML links
+	hyperlink
+		when user clicks the link, it will take / navigate to some other location
+		i) within same page
+			<a>	means anchor	is used to give hyper link
+
+		ii) different page
+
+i) create a paragraph whose id is "last"
+	<p id="last">
+	</p>
+
+	keep this paragraph at the bottom of the web page
+
+ii) create a hyper link to that paragraph
+	<a href="#last">click here to go to bottom</a>
+
+Task:
+	Create a html file "eight.html"
+	i) create few paragraphs. (you may copy come paragraph from wikipedia or any website)
+	iii) create couple of headings with id
+	iv) use those IDs (with #) to create hyperlink on top and bottom or even in middle of the page.
+	
+
+TasK:
+Create a html file "index.html"		(this is called as home page)
+	and give hyper link to every other file present in this folder
+
+	Instead of replacing current browser with new page, we should open the page in a new browser window.
+	target = "_blank|_self|_parent|_top|framename"
+
+while refering to documents present in our system, the hyperlink url (uniform resource locator. ex: https://www.w3schools.com/html/html_links.asp)
+	the hyperlink URL shall be relative (than absolute).
+
+	while refering to external url, it shall be absolute
+
+ <a href="D:/Jag/MPhasis/HANDSON/185%20Java%20JR/Feb15/two.html">Two</a><br>	(absolute)
+    <a href="three.html">Three</a><br>						(relative)
+   
+
+absolute:	complete path
+relative:	relative to the current location
+			index.html belongs to a folder. from that folder, the location is mentioned
+			just file name means, the file is present in the current folder
+			abcd/filename.html		means, file is present in folder "abcd" which is present in the current folder
+		
+	./ means current folder
+	../ means under the parent of current folder
+
+	
+
+project folder
+	->	images
+	->	scripts			code that refers to images means?
+					images/one.jpg		(here, images must be present in current loc)
+					this is not correct. 
+					../images/one.jpg	(correct) because, images is a folder present under parent of current folder
+
+	->>	styles
+
+
+
+problems in absolute location is:
+	we will move the project folder from d:\ drive to e:\ sometimes?
+		absolute paths become invalid
+
+
+1:00 to 1:45
+	LUNCH BREAK
+
+
+Tables
+	<table>
+		<thead>
+		</thead>
+		<tbody>	
+		<tbody>
+	</table>
+
+Task:
+	create a table which contains 
+		table heading	(thead and th)
+		table body	(tbody, tr, td)
+
+	Year, Semester, Subject, Score
+
+Task:
+	use rowspan attribute of <td> element to span multiple rows 
+
+Task:
+	use colspan attribute of <th> to span multiple columns. Display a Title for the table as a heading row
+
+Formatting tables:
+	format
+		border
+		text/ background color
+		width of the table. 
+		width of the columns
+		height of the rows
+
+
+Task:
+	identify how we can change the
+		border	
+			style:	dotted lines	    <table border="10" style="border-radius: 10pt;"> 
+
+			thickness
+			color
+		text	
+			color
+		background	
+			color
+		table width	
+			(make the table width 100% to the browser width)
+			table width to be specified as fixed width (width: 500px)
+		column width
+			
+		row height
+
+
+style="key1:value1;
+	key2:value2;	key3:value3;"
+    <table border="10" style="width:100%;border-color: green;background-color: yellow;color:blue;border-radius: 10pt;"> 
+
+
+<table style="width:100%">
+
+
+bgcolor is a html attribute
+background-color 	is CSS property
+
+
+
+<body bgcolor="blue">		html "bgcolor" attribute
+
+<body style="background-color:blue">	css "background-color" property
+
+
+
+Images and Objects:
+-------------------
+how to display image?
+	<img src="one.jpg" />
+
+
+C:\Users\rjaga\Pictures\pendrive.jpg
+
+
+Task:
+	display an image using absolute path	(either a pic present in local pc or internet)
+Task:
+	display an image using relative path (copy the image to current folder or sub folder)
+		<img src="images/one.jpg" />
+
+display a video
+	allow user to control the video (pause, play)
+	<svg> 
+=======================================================================================
+HTML Forms:
+-------------
+	Forms allow users to enter their input.
+	Forms are used by our web page to collect data from user.
+	Google signup is an example for a form
+		Form elements are used to capture the data entered by the user
+		
+	i) check box		(select more than 1 option)		ex:	interest
+	ii) radio button	(only 1 option can be selected)		ex: 	gender
+	iii) text box		(we can type characters, numbers, symbols etc)
+	iv) drop down list	(choose from given options)		ex:	State	we can choose Karnataka
+
+Task:
+Create a web page "forms.html"
+and use the below inputs
+	
+one column for Labels		
+one column for controls (text box)
+
+
+1) password
+2) text
+3) number
+4) date
+5) time
+6) email
+7) range
+8) file
+9) dropdown list
+10) radio
+11) check box
+12) submit
+13) reset
+
+
+    <table>
+        <tr>
+            <td>Employee Id</td>
+            <td><input type="number" name="" id=""></td>
+        </tr>
+        <tr>
+            <td>Name</td>
+            <td><input type="text" name="" id=""></td>
+        </tr>
+        <tr>
+            <td>Password</td>
+            <td><input type="password" name="" id=""></td>
+        </tr>
+        <tr>
+            <td>Date of Joining</td>
+            <td><input type="date" name="" id=""></td>
+        </tr>
+        <tr>
+            <td>Email</td>
+            <td><input type="email" name="" id=""></td>
+        </tr>
+        <tr>
+            <td>Photo</td>
+            <td><input type="file" name="" id=""></td>
+        </tr>
+        <tr>
+            <td>Department</td>
+            <td>
+                <select name="" id="">
+                    <option value="">Choose...</option>
+                    <option value="ECE">Electronics & Communication Engineering</option>
+                    <option value="EEE">Electrical & Electronics Engineering</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>Gender</td>
+            <td><input type="radio" name="gender" id="rdoFemale"><label for="rdoFemale">Female</label>
+                <input type="radio" name="gender" id="rdoMale"><label for="rdoMale">Male</label>
+                <input type="radio" name="gender" id="rdoOther"><label for="rdoOther">Other</label>
+            </td>
+        </tr>
+        <tr>
+            <td>Interests</td>
+            <td><input type="checkbox" name="interests" id="chkSports"><label for="chkSports">Sports</label>
+                <input type="checkbox" name="interests" id="chkMusic"><label for="chkMusic">Music</label>
+            </td>
+        </tr>
+        <tr>
+            <td><input type="submit"></td>
+            <td><input type="reset"></td>
+        </tr>
+    </table>
+
+4:00 to 4:15 PM
+	break
+
+
+How labels will help?
+	<label>Type here</label>
+	Type here
+User Name: <input type=text />			
+<label>Password:</label><input type=password />
+
+
+Task:
+	Identify how access keys are used in HTML form inputs
+
+Task:
+	Allow only jpg and gif files to be uploaded.
+	Allow multi select
+
+==============================================
+HTML5 Fundamentals
+	What's new in HTML5?
+
+
+Activity:
+	Identify what is new in HTML 5?
+
+	HTML 5 supports both audio and video	
+		<video>
+		<audio>
+	full support for running javascript
+	inline mathML and SVG
+		what is mathML
+			a2+2ab+b2	=	(a+b)2
+	new form input types
+		date
+		time
+		email
+		number
+		category
+		title
+		url
+		search
+	description
+	embed
+	article
+	footer
+	canvas
+	output
+
+	
+	
+	web storage like	localStorage	(in place of cookies)
+
+	nav
+	min and max
+	pattern
+	placeholder
+	required
+	step
+	drag and drop
+
+	drawing shapes like
+		rectangle
+		circle
+		triangle
+
+	Geo location
+		lat, lon	of the client accessing our website
+
+	
+
+
+		= x*2+3
+f(2)	= 2*2+3	=	7
